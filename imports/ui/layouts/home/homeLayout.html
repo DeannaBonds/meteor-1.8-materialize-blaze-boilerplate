@@ -1,0 +1,11 @@
+<template name="homeLayout" >
+    {{#if currentUser}}
+        {{> sideNav}}
+    {{/if}}
+    <div class="app-container">
+        {{> header}}
+        <main class="content-area">
+            {{> Template.dynamic template=main}}
+        </main>
+    </div>
+</template>

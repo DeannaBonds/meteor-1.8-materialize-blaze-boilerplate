@@ -1,0 +1,13 @@
+<template name="header">
+    <header class="app-header">
+            <ul>
+                {{#if $not currentUser}}
+                    <li class="login">Login/Sign-up</li>
+                {{else}}
+                    <li class="logout">Logout </li>
+                {{/if}}
+            </ul>
+            {{> loginModal}}
+    </header>
+
+</template>

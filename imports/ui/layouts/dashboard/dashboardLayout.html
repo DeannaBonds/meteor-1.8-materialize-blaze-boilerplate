@@ -1,0 +1,11 @@
+<template name="dashboardLayout">
+    {{#if currentUser}}
+        {{> sideNav}}
+    {{/if}}
+    <div class="app-container">
+        {{> header}}
+        <main class="app-layout">
+                {{> Template.dynamic template=main}}
+        </main>
+    </div>
+</template>

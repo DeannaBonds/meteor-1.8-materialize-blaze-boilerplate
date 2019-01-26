@@ -1,0 +1,18 @@
+.at-input label {
+    width: 100px;
+    display: inline-block;
+}
+.at-input input {
+    width: 60%;
+    display: inline-block;
+}
+.at-title {
+    padding-bottom: 20px;
+}
+
+.at-form-buttons {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
