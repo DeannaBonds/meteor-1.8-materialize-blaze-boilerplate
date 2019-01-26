@@ -8,4 +8,4 @@ Yet to be done.
 * Add Admin mode and user manager
 
 Notes:
-In the imports/ui/components, the meteor import statements do not support loading Sass files into the component.  CSS files can be used.  If Sass is desired or needed for the component, there is a styles/components folder to add the component style.  Always insure that the new component is added to the _allComponents.scss file.
+In the imports/ui/components, the meteor import statements do not support loading Sass files into the component.  CSS files can be used.  If Sass is desired or needed for the component, there is a styles/components folder to add the component style.  Always insure that the new component is added to the _all-components.scss file.
