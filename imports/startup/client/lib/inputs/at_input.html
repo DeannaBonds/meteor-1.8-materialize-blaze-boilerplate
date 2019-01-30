@@ -1,0 +1,75 @@
+<template name="override-atInput">
+    <div class="row">
+        {{> Template.dynamic template=templateName}}
+
+    </div>
+</template>
+
+<template name="override-atTextInput">
+  <div class="at-input input-field {{#if isValidating}}validating{{/if}} {{#if hasError}}has-error{{/if}} {{#if hasSuccess}}has-success{{/if}} {{#if feedback}}has-feedback{{/if}}">
+    {{#if showLabels}}
+      <label for="at-field-{{_id}}">
+        {{displayName}} {{#unless required}}{{optionalText}}{{/unless}}
+      </label>
+    {{/if}}
+    {{#if hasIcon}}
+        <i class="material-icons prefix" >{{iconClass}}</i>
+    {{/if}}
+    <input type="{{type}}" 
+           id="at-field-{{_id}}" 
+           name="at-field-{{_id}}" 
+           class="validate"
+           autocapitalize="none" 
+           autocorrect="off" 
+           autocomplete="on"
+           required
+    >
+     {{#if hasError}}
+        <span class="helper-text" data-error="Bad {{type}} format.">{{errorText}}</span>
+     {{/if}}
+  </div>
+</template>
+
+<template name="override-atCheckboxInput">
+  <div class="at-input">
+    <label for="at-field-{{_id}}">
+         <input type="{{type}}" id="at-field-{{_id}}" name="at-field-{{_id}}" {{disabled}}>
+         <span>{{displayName}}</span>
+    </label>
+  </div>
+</template>
+
+<template name="override-atSelectInput">
+  <div class="at-input input-field row">
+    <select id="at-field-{{_id}}" name="at-field-{{_id}}">
+      {{#each values}}
+        <option value="{{value}}">{{text}}</option>
+      {{/each}}
+    </select>
+    <label for="at-field-{{_id}}">{{displayName}}</label>
+  </div>
+</template>
+
+<template name="override-atRadioInput">
+  <div class="at-input">
+    <label>{{displayName}}</label>
+  </div>
+  {{#each values}}
+    <p class="at-input">
+        <label>
+            <input class="with-gap" 
+                id="at-field-{{id}}-choice-{{value}}" 
+                type="radio" 
+                name="at-field-{{id}}" 
+                value={{value}}
+                checked
+            >
+            <span>{{text}}</span>
+        </label>
+    </p>
+  {{/each}}
+</template>
+
+<template name="override-atHiddenInput">
+  <input type="hidden" id="at-field-{{_id}}" name="at-field-{{_id}}">
+</template>

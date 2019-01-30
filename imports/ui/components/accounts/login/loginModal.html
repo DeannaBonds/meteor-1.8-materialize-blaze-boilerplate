@@ -1,8 +1,11 @@
 <template name="loginModal">
-    {{#if $not currentUser}}
-        <div class="login-modal {{toggleLoginModal}}">
-            <i class="fa fa-close close-login"></i>
-            {{> atForm}}
+    <!-- Modal Structure -->
+    <div id="loginModal" class="modal">
+        <div class="modal-content">
+            <div class="">
+                <i class="material-icons close-login modal-close grey-text text-darken-1">close</i>
+                {{> atForm }}
+            </div>
         </div>
-    {{/if}}
+    </div>
 </template>

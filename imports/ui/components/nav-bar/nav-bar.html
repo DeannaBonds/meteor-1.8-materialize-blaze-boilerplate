@@ -1,0 +1,99 @@
+<template name="navBar">
+    <nav class=" indigo darken-2">
+        <div class="nav-wrapper">
+            <a href="#" data-target="slide-out" class="sidenav-trigger  show-on-large"><i class="material-icons">menu</i></a>
+
+            <a id="logo-container" href="/">
+               <img class="brand-logo center  hide-on-med-and-down" 
+                    style="height:80% ;margin:5px;" 
+                    alt="Logo" 
+                    src="/genericLogo.svg">
+            </a>
+
+            <ul  class="left hide-on-med-and-down">
+                <li>
+                    <a href="/dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span> </a>
+                </li>
+                <li>
+                    <a href="/"><i class="fa fa-users"></i> <span>Users Management</span> </a>
+                </li>
+            </ul>
+
+            <ul class="right">
+                <li>
+                    <a ><i class="material-icons">search</i></a>
+                </li>
+                <li>
+                    <a href="/settings"><i class="material-icons">settings</i></a>
+                </li>
+
+                <li>
+                    {{#if $not currentUser}}
+                        <a class="modal-trigger" href="#loginModal">
+                           <i class="material-icons left ">account_circle</i>Login/Sign-up</a>
+                    {{else}}
+                    <a class="logout">
+                            <i class="material-icons left">account_circle</i>Logout</a>
+                    {{/if}}
+                </li>
+                <li>
+                        <a href="/help"><i class="material-icons">help</i></a>
+                    </li>
+                <li>
+                    <a><i class="material-icons">more_vert</i></a>
+                </li>
+                <!-- {{#if $not currentUser}}
+                {{else}}
+                    <li class="logout">Logout </li>
+                {{/if}} -->
+
+            </ul>
+    
+            <ul id="slide-out" class="sidenav" style="transform: translateX(-105%);">
+                <li><div class="user-view">
+                        <div class="background">
+                            <img src="/genericLogo.svg"  width="100%">
+                        </div>
+                        <a href="#user"><img class="circle" src="genric-logo.svg"></a>
+                        <a href="#name"><span class="white-text name">John Doe</span></a>
+                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                    </div>
+                </li>
+
+                <li class="no-padding">
+                    <ul class="collapsible collapsible-accordion">
+                        <li>
+                            <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                            <div class="collapsible-body">
+                                <ul>
+                                    <li><a href="#!">First</a></li>
+                                    <li><a href="#!">Second</a></li>
+                                    <li><a href="#!">Third</a></li>
+                                    <li><a href="#!">Fourth</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    {{#if $not currentUser}}
+                        <a class="signon"> <i class="fa fa-user"></i> <span>xxLogin/Sign-up</span> </a>
+                    {{else}}
+                        <a class="logout"> <i class="fa fa-user"></i> <span>aaLogout</span> </a>
+                    {{/if}}
+                </li>
+                <li>
+                    <a href="/dashboard"><i class="fa fa-dashboard"></i> <span>Dashboard</span> </a>
+                </li>
+                <li>
+                    <a href="/"><i class="fa fa-users"></i> <span>Users Management</span> </a>
+                </li>
+                <li>
+                    <a class="settings"> <i class="fa fa-cog"></i> <span>Settings</span> </a>
+                </li>
+            </ul>
+ 
+        </div>
+ 
+    </nav>
+</template>

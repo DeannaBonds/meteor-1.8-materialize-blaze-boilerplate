@@ -5,7 +5,7 @@ import { BlazeLayout } from 'meteor/kadira:blaze-layout';
 // import { AccountsTemplates } from 'meteor/useraccounts:core';
 
 // Import to load these templates
-import '../../ui/layouts/home/homeLayout.js';
+import '../../ui/layouts/app/appLayout.js';
 import '../../ui/layouts/dashboard/dashboardLayout.js';
 // import '../../ui/pages/root-redirector.js';
 // import '../../ui/pages/lists-show-page.js';
@@ -19,13 +19,13 @@ import '../../ui/components/accounts/accounts-templates.js';
 FlowRouter.route( '/', {
     name: 'home',
     action() {
-        BlazeLayout.render( 'homeLayout', { main: 'home' } );
+        BlazeLayout.render( 'appLayout', { main: 'about' } );
     },
 } );
 
 FlowRouter.route( '/dashboard', {
     name: 'dashboard',
     action() {
-        BlazeLayout.render( 'dashboardLayout', { main: 'dashboard' } );
+        BlazeLayout.render( 'appLayout', { main: 'dashboard' } );
     },
 } );

@@ -1,4 +1,4 @@
-.at-input label {
+/* .at-input label {
     width: 100px;
     display: inline-block;
 }
@@ -15,4 +15,15 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+} */
+
+.close-login {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    cursor: pointer;
+    font-size: 2em;
+    padding: 10px 15px;
+    /* opacity: 0.2; */
 }

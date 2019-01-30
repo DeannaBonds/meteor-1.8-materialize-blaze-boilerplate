@@ -32,3 +32,6 @@ useraccounts:core
 raix:handlebar-helpers
 fourseven:scss
 aldeed:template-extension
+
+aldeed:collection2
+aldeed:autoform
