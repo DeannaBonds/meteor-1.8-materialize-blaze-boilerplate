@@ -1,5 +1,5 @@
 # meteor-1.8-blaze-boilerplate
-Boilerplate project for Meteor 8.1, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
+Boilerplate project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
 
 This is a work in progress (check back often)
 Yet to be done.
