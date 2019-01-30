@@ -1,6 +1,15 @@
 {
-  "name": "articulate-composer",
-  "private": true,
+  "name": "meteor-1.8-blaze-boilerplate",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Boilerplate for a Meteor app with Materialize",
+  "licenses" :  [
+        {
+            "type": "MIT",
+            "url": "https://www.opensource.org/licenses/mit-license.php"
+        }
+    ],
+    "email": "deanna.bonds@gmail.com",
   "scripts": {
     "start": "meteor run",
     "test": "meteor test --once --driver-package meteortesting:mocha",
