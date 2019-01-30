@@ -1,0 +1,12 @@
+#loginModal .or {
+    text-align: center;
+}
+
+#loginModal .hline {
+    text-decoration: line-through;
+    color: lightgrey;
+}
+
+#loginModal .or-text {
+    font-weight: bold;
+}

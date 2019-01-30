@@ -2,7 +2,7 @@
 
 Boilerplate project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
 
-This is a work in progress (check back often) 
+**This is a work in progress (_check back often_)** 
 
 ## Yet to be done.
 * Add Generic item crud to mongo owned by user

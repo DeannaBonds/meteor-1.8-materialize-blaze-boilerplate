@@ -1,5 +1,9 @@
 accounts-base@1.4.3
+accounts-google@1.3.2
+accounts-oauth@1.1.16
 accounts-password@1.5.1
+accounts-ui@1.3.1
+accounts-ui-unstyled@1.4.2
 aldeed:autoform@6.3.0
 aldeed:collection2@3.0.1
 aldeed:template-extension@4.1.0
@@ -38,6 +42,8 @@ fetch@0.1.0
 fortawesome:fontawesome@4.7.0
 fourseven:scss@4.10.0
 geojson-utils@1.0.10
+google-config-ui@1.0.1
+google-oauth@1.2.6
 hot-code-push@1.0.4
 html-tools@1.0.11
 htmljs@1.0.11
@@ -49,6 +55,7 @@ jquery@1.11.11
 kadira:blaze-layout@2.3.0
 kadira:flow-router@2.12.1
 launch-screen@1.1.1
+less@2.8.0
 livedata@1.0.18
 localstorage@1.2.0
 logging@1.1.20
@@ -88,6 +95,8 @@ msavin:jetsetter@4.0.0
 msavin:mongol@7.0.1
 npm-bcrypt@0.9.3
 npm-mongo@3.1.1
+oauth@1.2.7
+oauth2@1.2.1
 observe-sequence@1.0.16
 ordered-dict@1.1.0
 promise@0.11.2

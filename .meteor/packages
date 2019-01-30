@@ -27,6 +27,7 @@ fortawesome:fontawesome
 
 accounts-base
 accounts-password
+accounts-ui
 useraccounts:unstyled
 useraccounts:core
 raix:handlebar-helpers
@@ -35,3 +36,6 @@ aldeed:template-extension
 
 aldeed:collection2
 aldeed:autoform
+accounts-google
+google-config-ui
+service-configuration
