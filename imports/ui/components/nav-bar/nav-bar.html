@@ -52,11 +52,11 @@
             <ul id="slide-out" class="sidenav" style="transform: translateX(-105%);">
                 <li><div class="user-view">
                         <div class="background">
-                            <img src="/genericLogo.svg"  width="100%">
+                            <img src="/genericLogo.svg"  width="100%" style="opacity:.2">
                         </div>
-                        <a href="#user"><img class="circle" src="genric-logo.svg"></a>
-                        <a href="#name"><span class="white-text name">John Doe</span></a>
-                        <a href="#email"><span class="white-text email">jdandturk@gmail.com</span></a>
+                        <a href="#user"><img class="circle" src="{{ user.picture }}"></a>
+                        <a href="#name"><span class="grey-text name">{{ user.profile.name }}</span></a>
+                        <a href="#email"><span class="grey-text email">{{ user.services.google.email }}</span></a>
                     </div>
                 </li>
 

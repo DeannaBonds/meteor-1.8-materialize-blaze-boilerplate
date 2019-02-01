@@ -35,15 +35,15 @@
   background: #3288EB;
 }
 
-#at-google {
-  background: #db5a3c;
-  color: #fff;
+#xat-google {
+  xbackground: #db5a3c;
+  xcolor: #fff;
 }
-#at-google.disabled {
+#xat-google.disabled {
   color: #ddd;
   background: #666666;
 }
-#at-google:hover {
+#xat-google:hover {
   background: #CA4C2E;
 }
 

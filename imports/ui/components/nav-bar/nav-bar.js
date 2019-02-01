@@ -1,3 +1,4 @@
+import { Mongo } from 'meteor/mongo';
 import { Template } from 'meteor/templating';
 import { AccountsTemplates } from 'meteor/useraccounts:core';
 import { $ } from 'meteor/jquery';
@@ -18,4 +19,24 @@ Template.navBar.onRendered( function( ) {
     const modals = document.querySelectorAll( '.modal' );
     // eslint-disable-next-line no-undef
     M.Modal.init( modals );
+} );
+
+Template.navBar.onCreated( function() {
+ //   this.subscribe( 'Meteor.users.picture' );
+    console.log( 'navbar create:', this);
+} );
+
+Template.navBar.helpers( {
+    picture() {
+        if ( Accounts.user() ) {
+            return Accounts.user().picture;
+        }
+        return undefined;
+    },
+    user() {
+        if ( Accounts.user() ) {
+            return Accounts.user();
+        }
+        return undefined;
+    },
 } );
