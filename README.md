@@ -25,6 +25,10 @@ I have included:
 [change-password-mobile]: https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/raw/master/images/change-password-mobile.png "Change Password"
 [sign-in]: https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/raw/master/images/sign-in.png "Sign In"
 
+## M2M Meteor 2 Materialize error handler
+![alt text][new-item]
+[new-item]: https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/raw/master/images/new-item.png "New Item"
+
 ## Todo
 * Add Toast to M2M
 * Add Roles
