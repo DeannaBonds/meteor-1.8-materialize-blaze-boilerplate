@@ -14,7 +14,8 @@ I have included:
 * App broken into unauthorized, account, and app sections
 
 ## Account Management
-![alt text][change-password][change-password-mobile]
+![alt text][change-password]
+![alt text][change-password-mobile]
 
 ## Responsive User Accounts
 ![alt text][sign-in]
