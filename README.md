@@ -13,6 +13,8 @@ I have included:
 * Responsive sidenav.
 * App broken into unauthorized, account, and app sections
 
+![screenshot of change password](https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/master/images/change-password.png)
+
 ## Yet to be done.
 * Add Toast to M2M
 * Add Roles
