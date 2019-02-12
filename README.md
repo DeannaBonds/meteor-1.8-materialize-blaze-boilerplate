@@ -1,6 +1,6 @@
 # Meteor 1.8 MaterializeCSS Blaze Starter App
 
-Starter APp project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
+Starter App project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
 
 **This is a work in progress (_check back often_)** 
 
