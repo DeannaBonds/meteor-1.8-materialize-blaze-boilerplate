@@ -1,0 +1,50 @@
+<template name="items">
+    <div class="item-form">
+        <form class="new-item col s12">
+            <div class="row">
+                <div class="input-field col s12">
+                    <label for="name">Item Name</label>
+                    <input id="name" name="name" type="text" class="validate">
+                    <span class="helper-text"></span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <input id="stuff" name="stuff" type="text" class="validate">
+                    <label for="stuff">Item Stuff</label>
+                    <span class="helper-text"></span>
+                </div>
+            </div>
+
+            <div class="row">
+                <label class="input-field col s12">
+                    <input type="checkbox" name="important" checked="checked" />
+                    <span>Important</span>
+                </label>
+            </div>
+            <button class="btn waves-effect waves-light" type="submit" name="action">New Item
+                <i class="material-icons right">send</i>
+            </button>
+        </form>
+    </div>
+    <div class="white text-black" style="padding: 5px; margin: 10px;">
+        <h5>Items</h5>
+        <ul>
+            {{#each items }}
+            <li>{{> item}} </li>
+            {{else}}
+            <li>No items</li>
+            {{/each}}
+        </ul>
+    </div>
+
+</template>
+
+<template name="item">
+    <li>
+        <a class="delete" style="cursor: pointer;">
+            <i class="material-icons">delete</i>
+        </a>
+        <span style="vertical-align: top; display: inline-block">{{ name }}</span>
+    </li>
+</template>

@@ -1,0 +1,103 @@
+<template name="navApp">
+    <!-- top nav -->
+    <nav class="light-blue" >
+        <a href="#" data-target="nav-app" class="sidenav-trigger  show-on-large"><i class="material-icons">menu</i></a>
+        <ul  class="left hide-on-med-and-down">
+        </ul>
+
+        <ul class="right">
+            <li>
+                <a href="/app/search">
+                    <i class="material-icons">search</i>
+                </a>
+            </li>
+
+
+            {{#if $not currentUser}}
+                <li>
+                    <a href="/account/sign-in">
+                        <i class="material-icons left">account_circle</i>Login/Sign-up</a>
+                </li>
+            {{else}}
+                <li>
+                    <a href="/app/dashboard">
+                        <i class="material-icons">dashboard</i>
+                    </a>
+                </li>
+                <li>
+                    <a href="/account/overview">
+                        <i class="material-icons">account_circle</i>
+                    </a> 
+                </li>
+                <li>
+                    <a href="/account/notifications">
+                        <i class="material-icons">notifications_none</i>
+                    </a>
+                </li>
+
+            {{/if}}
+            <li>
+                <a href="/app/help">
+                    <i class="material-icons">help</i>
+                </a>
+            </li>
+            <!-- <li>
+                <a><i class="material-icons">more_vert</i></a>
+            </li> -->
+
+        </ul>
+    </nav>
+
+<!-- side nav -->
+    <ul id="nav-app" class="sidenav" style="transform: translateX(-105%);">
+        <li>
+            <div class="background">
+                <img src="/genericLogo.svg"  width="100%" >
+            </div>
+        </li>
+
+        <!-- <li class="no-padding">
+            <ul class="collapsible collapsible-accordion">
+                <li>
+                    <a class="collapsible-header">Dropdown<i class="material-icons">arrow_drop_down</i></a>
+                    <div class="collapsible-body">
+                        <ul>
+                            <li><a href="#!">First</a></li>
+                            <li><a href="#!">Second</a></li>
+                            <li><a href="#!">Third</a></li>
+                            <li><a href="#!">Fourth</a></li>
+                        </ul>
+                    </div>
+                </li>
+            </ul>
+        </li> -->
+        {{#if $not currentUser}}
+            <li class="bold">
+                <a class="signon sidenav-close" href='/account/sign-on'>
+                    <i class="fa fa-user"></i>
+                    Login/Sign-up
+                </a>
+            </li>
+        {{else}}
+            <li class="bold"> 
+                <a href="/account/overview" class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">account_circle</i>
+                    Account overview
+                </a>
+            </li>
+            <li class="bold">
+                <a href="/account/settings" class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">settings</i>
+                    Settings
+                </a>
+            </li>
+            <li class="bold logout">
+                <a class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">do_not_disturb_on</i>
+                    Logout
+                </a>
+            </li>
+        {{/if}}
+    </ul>
+
+</template>

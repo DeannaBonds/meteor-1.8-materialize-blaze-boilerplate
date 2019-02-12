@@ -1,28 +1,7 @@
-import { $ } from 'meteor/jquery';
-import { AccountsTemplates } from 'meteor/useraccounts:core';
-import { FlowRouter } from 'meteor/kadira:flow-router';
+
 
 import './loginModal.html';
 import './loginModal.css';
-
-AccountsTemplates.configure( {
-    privacyUrl: '/about/privacy',
-    termsUrl: '/about/terms-of-use',
-    enablePasswordChange: true,
-    showForgotPasswordLink: true,
-    negativeFeedback: true,
-    onSubmitHook: ( error ) => {
-        if ( !error ) {
-            // close window
-            // eslint-disable-next-line no-undef
-            M.Modal.getInstance( $( '#loginModal' ).get( 0 ) ).close();
-        }
-    },
-    onLogoutHook: () => {
-        FlowRouter.redirect( '/' );
-    },
-} );
-
 
 /*
  * Examples of adding fields to the registration form

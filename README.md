@@ -1,11 +1,20 @@
-# Meteor 1.8 MaterializeCSS Blaze Boilerplate
+# Meteor 1.8 MaterializeCSS Blaze Starter App
 
-Boilerplate project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
+Starter APp project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router, using latest Meteor style guide.
 
 **This is a work in progress (_check back often_)** 
 
+## Starter App
+I upgraded the status of this from boilerplate to starter app.
+I have included:
+* Meteor Accounts packaged with my reskinning in a Materialize look
+* Full Meteor Accounts support, including accounts section of the app for full account actions.
+* Items sample app page with materialize forms and my simpleschema errors to materialize error messages on each field
+* Responsive sidenav.
+* App broken into unauthorized, account, and app sections
+
 ## Yet to be done.
-* Add Generic item crud to mongo owned by user
+* Add Toast to M2M
 * Add Roles
 * Add Admin mode and user manager
 
@@ -15,6 +24,8 @@ Boilerplate project for Meteor 1.8, Blaze, ESLint, Sass, Meteortoys, Flow Router
 * Autoform has not been maintained and currently doesn't work correctly.  I may in the future update autoform, but for now I will code the forms the old fashion way.
 
 * Meteor Accounts Materialize didn't work for the more modern Meteor code.  I rewrote it and it is included in this repo (for now).  I will probably break that out into a npm package of its own.  I love the results of how the signon screens look.
+
+* I created a bridge between errors thrown from the simpleSchema validation and the materialize forms.
 
 ## Links:
  * [Materialize](https://materializecss.com)

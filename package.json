@@ -2,7 +2,7 @@
   "name": "meteor-1.8-blaze-boilerplate",
   "version": "0.1.0",
   "private": false,
-  "description": "Boilerplate for a Meteor app with Materialize",
+  "description": "Starter App for  Meteor with Materialize",
   "licenses" :  [
         {
             "type": "MIT",

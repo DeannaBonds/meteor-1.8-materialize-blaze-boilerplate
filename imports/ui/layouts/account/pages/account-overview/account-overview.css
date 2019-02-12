@@ -1,0 +1,7 @@
+.avatar-frame {
+    max-width: 20%;
+    margin: 20px auto;
+    display: block;
+    border: 2px ridge #aaa;
+    background-color: #f9f9f9;
+}

@@ -1,0 +1,11 @@
+
+<template name="accountOverview">
+    <div>
+        <a href="#user"><img class="circle avatar-frame hoverable" src="{{ user.publicInfo.avatar }}"></a>
+    </div>
+    <div>
+        <h3 class="dark-grey-text name center-align">{{ user.publicInfo.displayName }}</h3>
+        <h5 class="grey-text center-align">{{ user.publicInfo.description }}</h5>
+    </div>
+    <a href="#email"><span class="dark-grey-text email">{{ user.services.google.email }}</span></a>
+</template>

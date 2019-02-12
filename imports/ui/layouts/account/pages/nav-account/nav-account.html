@@ -1,0 +1,71 @@
+<template name="navAccount">
+
+    <!-- top nav -->
+    <nav class="light-blue">
+        <a href="#" data-target="nav-account" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i
+               class="material-icons">menu</i>
+        </a>
+
+        <ul class="right">
+            <li>
+                <a href="/app/dashboard" class="tooltipped" data-tooltip="Dashboard" data-position="bottom">
+                    <i class="material-icons">dashboard</i>
+                </a>
+            </li>
+            <li>
+                <a href="/account/notifications" class="tooltipped" data-tooltip="Notifications" data-position="bottom">
+                    <i class="material-icons">notifications_none</i>
+                </a>
+            </li>
+            <li>
+                <a href="/app/help" class="tooltipped" data-tooltip="Help" data-position="bottom">
+                    <i class="material-icons">help</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- side nav -->
+    <ul id="nav-account" class="sidenav sidenav-fixed">
+        <a id="logo-container" href="/" class="sidenav-close">
+            <img class="brand-logo center " style="width:100% ;margin-bottom:10px;" alt="Logo" src="/genericLogo.svg">
+        </a>
+
+        <li class="bold {{isActivePath path='/account/overview'}}">
+            <a href="/account/overview" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">account_circle</i>
+                Account Overview
+            </a>
+        </li>
+        <li class="bold {{isActivePath path='/account/info'}}">
+            <a href="/account/info" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">info_outline</i>
+                Personal Info
+            </a>
+        </li>
+        <li class="bold {{isActivePath path='/account/settings'}}">
+            <a href="/account/settings" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">settings</i>
+                Account Settings
+            </a>
+        </li>
+        {{#if user.services.password.mark }}
+        <li class="bold {{isActivePath path='/account/change-password'}}">
+            <a href="/account/change-password" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">security</i>
+                Change Password
+            </a>
+        </li>
+        {{/if}}
+        <li class="bold {{isActivePath path='/account/privacy'}}">
+            <a href="/account/privacy" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">lock_open</i>
+                Privacy Settings
+            </a>
+        </li>
+        <li class="bold logout"> <a class="waves-effect waves-teal sidenav-close">
+            <i class="material-icons">do_not_disturb_on</i>
+            Logout
+        </a> </li>
+    </ul>
+</template>

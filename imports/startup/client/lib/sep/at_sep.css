@@ -1,12 +1,12 @@
-#loginModal .or {
+.at-sep .or {
     text-align: center;
 }
 
-#loginModal .hline {
+.at-sep .hline {
     text-decoration: line-through;
     color: lightgrey;
 }
 
-#loginModal .or-text {
+.at-sep .or-text {
     font-weight: bold;
 }

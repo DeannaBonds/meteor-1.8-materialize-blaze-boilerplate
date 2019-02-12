@@ -1,0 +1,31 @@
+.dashboard-page-title {
+
+}
+
+.item-form {
+    margin-top: 10px;
+    background-color: white;
+    border: 1px solid #aaaaaa;
+    border-radius: 16px;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 992px) {
+    .item-form {
+        padding: 20px;
+    }
+}
+
+
+/* .item-form .form-group {
+    margin: 8px;
+}
+
+.item-form .form-group .control-label {
+    width: 100px;
+    display: inline-block;
+}
+
+.item-form .form-group .form-control {
+    border-radius: 7px;
+} */

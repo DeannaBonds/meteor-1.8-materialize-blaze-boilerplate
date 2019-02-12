@@ -1,0 +1,12 @@
+<template name="accountLayout">
+    {{#if currentUser}}
+        {{> navAccount }}
+        <div class="offset-wrapper">
+            <main class="container">
+                {{> Template.dynamic template=main}}
+            </main>
+        </div>
+    {{else}}
+        <h2 class="center-align">Please <a href="/account/sign-in">Sign In</a> to see Account Info.</h2>
+    {{/if}}
+</template>

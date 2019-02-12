@@ -17,12 +17,12 @@ es5-shim@4.8.0                # ECMAScript 5 compatibility for older browsers
 ecmascript@0.12.4              # Enable ECMAScript2015+ syntax in app code
 shell-server@0.4.0            # Server-side component of the `meteor shell` command
 
-#autopublish@1.0.7             # Publish all data to the clients (for prototyping)
-insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 
-meteortoys:allthings
+
 kadira:flow-router
 kadira:blaze-layout
+arillo:flow-router-helpers
+
 fourseven:scss
 fortawesome:fontawesome
 
@@ -31,6 +31,7 @@ accounts-password
 accounts-ui
 useraccounts:unstyled
 useraccounts:core
+useraccounts:flow-routing
 accounts-google
 google-config-ui
 service-configuration
@@ -40,4 +41,8 @@ aldeed:template-extension
 
 aldeed:collection2
 aldeed:autoform
+
+meteortoys:allthings
+#autopublish@1.0.7             # Publish all data to the clients (for prototyping)
+#insecure@1.0.7                # Allow all DB writes from clients (for prototyping)
 

@@ -1,0 +1,2 @@
+
+import './tos.html';

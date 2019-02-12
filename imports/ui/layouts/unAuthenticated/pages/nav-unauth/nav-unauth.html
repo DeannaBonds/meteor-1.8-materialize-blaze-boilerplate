@@ -1,0 +1,80 @@
+<template name="navUnauth">
+    <nav class="light-blue">
+        <a href="#" data-target="nav-unauth" class="top-nav sidenav-trigger waves-effect waves-light circle hide-on-large-only"><i
+               class="material-icons">menu</i>
+        </a>
+
+        <ul class="right">
+            {{#if currentUser }}
+                <li>
+                    <a  href="/account/notifications">
+                        <i class="material-icons">notifications_none</i>
+                    </a>
+                </li>
+            {{/if}}
+            <li>
+                <a href="/app/help">
+                    <i class="material-icons">help</i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <ul id="nav-unauth" class="sidenav sidenav-fixed">
+        <a id="logo-container" href="/" class="sidenav-close">
+            <img class="brand-logo center" style="width:100% ;margin-bottom:10px;" alt="Logo" src="/genericLogo.svg">
+        </a>
+
+        {{#if $not currentUser }}
+            <li class="bold {{isActivePath path='/account/sign-in'}}">
+                <a href="/account/sign-in" class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">account_circle</i>
+                    Sign In
+                </a>
+            </li>
+            <li class="bold {{isActivePath path='/account/sign-up'}}">
+                <a href="/account/sign-up" class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">person_add</i>
+                    Sign Up
+                </a>
+            </li>
+        {{else}}
+            <li class="bold">
+                <a href="/app/dashboard" class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">dashboard</i>
+                    Dashboard
+                </a>
+            </li>
+            <li class="bold">
+                <a href="/account/overview" class="waves-effect waves-teal sidenav-close">
+                    <i class="material-icons">account_circle</i>
+                    Account
+                </a>
+            </li>      
+        {{/if}}
+        <li class="bold {{isActivePath path='/app/about'}}">
+            <a href="/app/about" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">book</i>
+                About SongCraft
+            </a>
+        </li>
+        <li class="bold {{isActivePath path='/app/whats-new'}}">
+            <a href="/app/whats-new" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">new_releases</i>
+                What's New
+            </a>
+        </li>
+        <li class="bold {{isActivePath path='/app/terms-of-service'}}">
+            <a href="/app/terms-of-service" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">assignment</i>
+                Terms of Service
+            </a>
+        </li>
+        <li class="bold {{isActivePath path='/app/privacy-statement'}}">
+            <a href="/app/privacy-statement" class="waves-effect waves-teal sidenav-close">
+                <i class="material-icons">lock_outline</i>
+                Privacy Statement
+            </a>
+        </li>
+    </ul>
+</template>
