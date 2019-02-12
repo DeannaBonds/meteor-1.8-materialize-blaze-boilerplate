@@ -5,6 +5,10 @@ import { $ } from 'meteor/jquery';
 
 import './nav-account.html';
 
+Template.navAccount.onCreated( function() {
+    this.subscribe( 'Meteor.users.mydetails' );
+} );
+
 Template.navAccount.events( {
     'click .logout': ( ) => {
         AccountsTemplates.logout();

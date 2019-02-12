@@ -13,12 +13,14 @@ I have included:
 * Responsive sidenav.
 * App broken into unauthorized, account, and app sections
 
-![alt text][change-password]
+## Account Management
+![alt text][change-password][change-password-mobile]
 
-#Responsive User Accounts
+## Responsive User Accounts
 ![alt text][sign-in]
 
 [change-password]: https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/raw/master/images/change-password.png "Change Password"
+[change-password-mobile]: https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/raw/master/images/change-password-mobile.png "Change Password"
 [sign-in]: https://github.com/DeannaBonds/meteor-1.8-materialize-blaze-boilerplate/raw/master/images/sign-in.png "Sign In"
 
 ## Todo
