@@ -15,6 +15,7 @@ I have included:
 
 ## Account Management
 ![alt text][change-password]
+
 ![alt text][change-password-mobile]
 
 ## Responsive User Accounts
